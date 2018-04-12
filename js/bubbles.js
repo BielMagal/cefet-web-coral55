@@ -27,10 +27,10 @@ function instantiateBubble() {
 		oldBubbleEl.addEventListener('transitionend', removeElement);
     }(newBubbleEl));
 
-    window.setTimeout(instantiateBubble, 7000 + Math.random()*5000)
+    window.setTimeout(instantiateBubble, 2000 + Math.random()*5000)
+    //instantiateBubble();
 }
 
-
-
-
-instantiateBubble();
+for(i=0; i<5; i++){
+    instantiateBubble();
+}
